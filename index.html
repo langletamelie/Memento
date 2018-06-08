@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Mon Mémento</title>
   </head>
@@ -21,47 +21,93 @@
         </thead>
         <tbody>
           <tr>
-            <th>man ls</th>
-            <th>Affiche le manuel</th>
-            <th>ls</th>
-            <th>Affiche le contenu du dossier courant</th>
-            <th>ls -a</th>
-            <th>Affiche le dossier et fichiers cachés</th>
+            <td>man ls</td>
+            <td>Affiche le manuel</td>
+            <td>ls</td>
+            <td>Affiche le contenu du dossier courant</td>
+            <td>ls -a</td>
+            <td>Affiche le dossier et fichiers cachés</td>
           </tr>
           <tr>
-            <th>ls -l</th>
-            <th>Version longue du dossier</th>
-            <th>ls -al</th>
-            <th>Version longue avec fichiers cachés</th>
-            <th>pwd</th>
-            <th>Permet de se situer(chemin d'accès)</th>
+            <td>ls -l</td>
+            <td>Version longue du dossier</td>
+            <td>ls -al</td>
+            <td>Version longue avec fichiers cachés</td>
+            <td>pwd</td>
+            <td>Permet de se situer(chemin d'accès)</td>
           </tr>
           <tr>
-            <th>cd "nom du dossier"</th>
-            <th>Permet de se déplacer dans le dossier</th>
-            <th>cd ..</th>
-            <th>Retourner au dossier parent</th>
-            <th>cd ~</th>
-            <th>Retourner à la racine</th>
+            <td>cd "nom du dossier"</td>
+            <td>Permet de se déplacer dans le dossier</td>
+            <td>cd ..</td>
+            <td>Retourner au dossier parent</td>
+            <td>cd ~</td>
+            <td>Retourner à la racine</td>
           </tr>
           <tr>
-            <th>cd ../..</th>
-            <th>Permet de retourner au dossier gd-parent</th>
-            <th>mkdir website ou mkdir Documents/website</th>
-            <th>Création du dossier website dans Documents</th>
-            <th>mkdir -p Memento/assets (dans website)</th>
-            <th>Permet de créer le dossier parents(Memento) en même tps que le sous-dossier</th>
+            <td>cd ../..</th>
+            <td>Permet de retourner au dossier gd-parent</td>
+            <td>mkdir website ou mkdir Documents/website</td>
+            <td>Création du dossier website dans Documents</td>
+            <td>mkdir -p Memento/assets (dans website)</td>
+            <td>Permet de créer le dossier parents(Memento) en même tps que le sous-dossier</td>
           </tr>
           <tr>
-            <th>mkdir css img js</th>
-            <th>création 3 dossiers en même temps</th>
-            <th>touch index.html</th>
-            <th>créer fichier index.html</th>
-            <th>atom index.html</th>
-            <th>ouvre le fichier index.html sur atom</th>
+            <td>mkdir css img js</td>
+            <td>création 3 dossiers en même temps</td>
+            <td>touch index.html</td>
+            <td>créer fichier index.html</td>
+            <td>atom index.html</td>
+            <td>ouvre le fichier index.html sur atom</td>
           </tr>
         </tbody>
     </table>
+  <h2>Les installations</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Commandes</th>
+        <th>Résultats</th>
+        <th>Commandes</th>
+        <th>Résultats</th>
+        <th>Commandes</th>
+        <th>Résultats</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>sudo -s</td>
+        <td>Passer en Super-utilisateur</td>
+        <td>apt update</td>
+        <td>mettre à jour la liste des paquets</td>
+        <td>apt upgrate</td>
+        <td>mettre à jour les paquets</td>
+      </tr>
+      <tr>
+        <td>apt search XML</td>
+        <td>recherche les paquets contenant XML</td>
+        <td>apt install git (si présent dans les paquets)</td>
+        <td>installer git</td>
+        <td>dpkg -i atom.amd64.deb (car non présent dans les paquets)</td>
+        <td>permet d'installer atom</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Git et Github</h2>
+  <p>Pour sauvegarder les fichiers que l'on créer, on peut utiliser la solution <a href="https://github.com/langletamelie" title="lien vers mon Github"> Github.</a> On se positionne dans le dossier et l'on fait plusieurs manipulations:
+    <ul>
+      <li>git init</li>
+      <li>touch NomDuFichier.html NomDuFichier.css</li>
+      <li>git add NomDuFichier.html NomDuFichier.css</li>
+      <li>atom NomDuFichier.html</li>
+      <li>git commit -m "commentaire dur la modification apportée"</li>
+      <li>git status</li>
+      <li>git log</li>
+      <li>git remote add origin url du repo sur github</li>
+      <li>git push -u origin master</li>
+    </ul>
+    Pour la création de <a href="https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github/creer-des-branches" title="lien vers le tuto openclassrooms sur la création de branches">branches.</a>
+  </p>
     <pre><code></code></pre>
   </body>
 </html>
